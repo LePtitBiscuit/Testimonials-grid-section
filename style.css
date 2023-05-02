@@ -1,3 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
+html,
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body p {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+body h1 {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 23px;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+main {
+  display: grid;
+  width: 80%;
+  grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.testimonial {
+  background-color: red;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.testimonial h1 {
+  color: white;
+}
+
+.one {
+  background: url("images/bg-pattern-quotation.svg") no-repeat;
+  background-position-x: 80%;
+  background-color: hsl(263, 55%, 52%);
+  grid-area: 1/1/2/3;
+}
+
+.two {
+  background-color: hsl(217, 19%, 35%);
+}
+
+.three {
+  grid-area: 1/4/3/5;
+  background-color: white;
+}
+
+.three h1 {
+  color: hsl(217, 19%, 35%);
+}
+
+.three p {
+  color: hsla(217, 30%, 14%, 0.63);
+}
+
+.five {
+  grid-area: 2/2/3/4;
+}
+
+.people img {
+  border-radius: 50%;
+  width: 30px;
+  border: solid 1px white;
+}
+
+.people {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.info {
+  margin: 0 10px 0 10px;
+}
+
+.name {
+  color: white;
+}
+
+.status {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.texte {
+  color: rgba(255, 255, 255, 0.5);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
