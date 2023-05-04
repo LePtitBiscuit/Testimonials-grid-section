@@ -2,51 +2,74 @@
 
 html,
 body {
+  background-color: hsl(210, 46%, 95%);
   height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-body p {
   font-family: "Barlow Semi Condensed", sans-serif;
   font-weight: 500;
-  line-height: 20px;
-}
-
-body h1 {
-  font-family: "Barlow Semi Condensed", sans-serif;
-  font-weight: 600;
-  font-weight: 600;
-  font-size: 1.2rem;
-  line-height: 23px;
-  margin-bottom: 10px;
-  letter-spacing: 0.5px;
+  color: white;
+  letter-spacing: 0.25px;
 }
 
 main {
+  width: 1140px;
+  min-height: 500px;
   display: grid;
-  width: 80%;
   grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
-  gap: 30px;
+  gap: 25px;
 }
 
 .testimonial {
   background-color: red;
+  padding: 30px;
   border-radius: 10px;
-  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 50px 50px 0px rgba(0, 0, 0, 0.1);
 }
 
-.testimonial h1 {
-  color: white;
+img {
+  width: 30px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.people {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.info {
+  margin-left: 15px;
+}
+
+.status {
+  opacity: 0.6;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 25px;
+  margin: 0 0 10px 0;
+}
+
+.text {
+  font-size: 0.85rem;
+  opacity: 0.5;
+  line-height: 18px;
 }
 
 .one {
-  background: url("images/bg-pattern-quotation.svg") no-repeat;
-  background-position-x: 80%;
-  background-color: hsl(263, 55%, 52%);
   grid-area: 1/1/2/3;
+  background: url(images/bg-pattern-quotation.svg) no-repeat;
+  background-color: hsl(263, 55%, 52%);
+  background-position-x: 85%;
 }
 
 .two {
@@ -56,51 +79,26 @@ main {
 .three {
   grid-area: 1/4/3/5;
   background-color: white;
+  color: hsl(219, 29%, 14%);
 }
 
-.three h1 {
-  color: hsl(217, 19%, 35%);
-}
-
-.three p {
-  color: hsla(217, 30%, 14%, 0.63);
+.four {
+  background-color: white;
+  color: hsl(219, 29%, 14%);
 }
 
 .five {
   grid-area: 2/2/3/4;
-}
-
-.people img {
-  border-radius: 50%;
-  width: 30px;
-  border: solid 1px white;
-}
-
-.people {
-  display: flex;
-  margin-bottom: 15px;
-}
-
-.info {
-  margin: 0 10px 0 10px;
-}
-
-.name {
-  color: white;
-}
-
-.status {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.texte {
-  color: rgba(255, 255, 255, 0.5);
+  background-color: hsl(219, 29%, 14%);
 }
 
 .attribution {
+  margin-top: 20px;
   font-size: 11px;
   text-align: center;
+  color: black;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(314, 100%, 50%);
+  text-decoration: none;
 }
